@@ -16,16 +16,26 @@ public class PrimeFactorsTest {
 
     @Test
     public void test2ReturnsListOf2() {
-        assertThat(PrimeFactors.generate(2)).containsSequence(2);
+        assertThat(PrimeFactors.generate(2)).containsExactly(2);
     }
 
     @Test
     public void test3ReturnsListOf3() {
-        assertThat(PrimeFactors.generate(3)).containsSequence(3);
+        assertThat(PrimeFactors.generate(3)).containsExactly(3);
     }
 
     @Test
     public void test4ReturnsListOf2() {
-        assertThat(PrimeFactors.generate(4)).containsSequence(2);
+        assertThat(PrimeFactors.generate(4)).containsExactly(2);
+    }
+
+    @Test
+    public void test5ReturnsListOf5() {
+        assertThat(PrimeFactors.generate(5)).containsExactly(5);
+    }
+
+    @Test
+    public void test6ReturnsListOf2And3() {
+        assertThat(PrimeFactors.generate(6)).containsExactly(2,3);
     }
 }
