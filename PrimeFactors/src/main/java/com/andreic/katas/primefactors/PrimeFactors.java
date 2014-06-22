@@ -9,16 +9,12 @@ import java.util.List;
 public class PrimeFactors {
     public static List<Integer> generate(int number) {
         List<Integer> factors = new ArrayList<Integer>();
-        if (number == 2) {
-            factors.add(2);
-        }
-
-        if (number == 3) {
-            factors.add(3);
-        }
-
-        if (number == 4) {
-            factors.add(2);
+        int factor = 2;
+        while (factor <= number) {
+            if (number % factor == 0) {
+                factors.add(factor);
+            }
+            factor++;
         }
 
         return factors;
