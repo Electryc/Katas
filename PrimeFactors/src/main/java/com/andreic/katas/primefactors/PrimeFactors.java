@@ -11,12 +11,21 @@ public class PrimeFactors {
         List<Integer> factors = new ArrayList<Integer>();
         int factor = 2;
         while (factor <= number) {
-            if (number % factor == 0) {
+            if ((number % factor == 0) && isPrime(factor)) {
                 factors.add(factor);
             }
             factor++;
         }
 
         return factors;
+    }
+
+    private static boolean isPrime(int factor) {
+        for (int i = 2; i <= Math.sqrt(factor); i++){
+            if (factor % i == 0){
+                return false;
+            }
+        }
+        return true;
     }
 }
