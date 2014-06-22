@@ -9,9 +9,14 @@ import java.util.List;
 public class PrimeFactors {
     public static List<Integer> generate(int number) {
         List<Integer> factors = new ArrayList<Integer>();
-        if (number  != 1) {
+        if (number == 2) {
             factors.add(2);
         }
+
+        if (number == 3) {
+            factors.add(3);
+        }
+
         return factors;
     }
 }
