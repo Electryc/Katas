@@ -36,6 +36,36 @@ public class PrimeFactorsTest {
 
     @Test
     public void test6ReturnsListOf2And3() {
-        assertThat(PrimeFactors.generate(6)).containsExactly(2,3);
+        assertThat(PrimeFactors.generate(6)).containsExactly(2, 3);
+    }
+
+    @Test
+    public void test7ReturnsListOf7() {
+        assertThat(PrimeFactors.generate(7)).containsExactly(7);
+    }
+
+    @Test
+    public void test8ReturnsListOf2() {
+        assertThat(PrimeFactors.generate(8)).containsExactly(2);
+    }
+
+    @Test
+    public void test9ReturnsListOf3() {
+        assertThat(PrimeFactors.generate(9)).containsExactly(3);
+    }
+
+    @Test
+    public void test15ReturnsListOf3And5() {
+        assertThat(PrimeFactors.generate(15)).containsExactly(3, 5);
+    }
+
+    @Test
+    public void test30ReturnsListOf2And3And5() {
+        assertThat(PrimeFactors.generate(30)).containsExactly(2, 3, 5);
+    }
+
+    @Test
+    public void test210ReturnsListOf2And3And5And7() {
+        assertThat(PrimeFactors.generate(210)).containsExactly(2, 3, 5, 7);
     }
 }
