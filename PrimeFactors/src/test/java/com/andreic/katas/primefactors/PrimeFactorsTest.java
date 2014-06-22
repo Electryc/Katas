@@ -15,12 +15,12 @@ public class PrimeFactorsTest {
     }
 
     @Test
-    public void test2Returns2() {
+    public void test2ReturnsListOf2() {
         assertThat(PrimeFactors.generate(2)).containsSequence(2);
     }
 
     @Test
-    public void test3Returns3() {
+    public void test3ReturnsListOf3() {
         assertThat(PrimeFactors.generate(3)).containsSequence(3);
     }
 }
