@@ -18,4 +18,9 @@ public class PrimeFactorsTest {
     public void test2Returns2() {
         assertThat(PrimeFactors.generate(2)).containsSequence(2);
     }
+
+    @Test
+    public void test3Returns3() {
+        assertThat(PrimeFactors.generate(3)).containsSequence(3);
+    }
 }
