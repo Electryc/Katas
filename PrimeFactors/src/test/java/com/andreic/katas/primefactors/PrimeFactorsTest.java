@@ -13,4 +13,9 @@ public class PrimeFactorsTest {
     public void test1ReturnsEmptyList() {
         assertThat(PrimeFactors.generate(1)).isEmpty();
     }
+
+    @Test
+    public void test2Returns2() {
+        assertThat(PrimeFactors.generate(2)).containsSequence(2);
+    }
 }
