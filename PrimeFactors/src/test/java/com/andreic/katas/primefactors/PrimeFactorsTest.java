@@ -23,4 +23,9 @@ public class PrimeFactorsTest {
     public void test3ReturnsListOf3() {
         assertThat(PrimeFactors.generate(3)).containsSequence(3);
     }
+
+    @Test
+    public void test4ReturnsListOf2() {
+        assertThat(PrimeFactors.generate(4)).containsSequence(2);
+    }
 }
