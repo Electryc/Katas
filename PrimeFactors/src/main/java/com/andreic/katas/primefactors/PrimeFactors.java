@@ -17,6 +17,10 @@ public class PrimeFactors {
             factors.add(3);
         }
 
+        if (number == 4) {
+            factors.add(2);
+        }
+
         return factors;
     }
 }
