@@ -8,7 +8,6 @@ import java.util.List;
  */
 public class PrimeFactors {
     public static List<Integer> generate(int number) {
-        List<Integer> factors = new ArrayList<Integer>();
-        return factors;
+        return new ArrayList<Integer>();
     }
 }
